@@ -336,7 +336,7 @@ section { padding: 90px 0; position: relative; }
 /* ============================================================
    CTA STRIP
    ============================================================ */
-.cta { position: relative; overflow: hidden; backdrop-filter: none; text-align: center; color: #fff; background-color: #05070b; background-image: linear-gradient(180deg, rgba(5, 8, 12, 0.6), rgba(5, 8, 12, 0.64)), url('assets/cta-bg.jpg'); background-size: cover; background-position: center; }
+.cta { position: relative; overflow: hidden; backdrop-filter: none; text-align: center; color: #fff; background-color: #05070b; background-image: linear-gradient(180deg, rgba(5, 8, 12, 0.6), rgba(5, 8, 12, 0.64)), url('assets/cta-banner.jpg'); background-size: cover; background-position: center; }
 .cta > * { position: relative; }
 .cta h2 { color: #fff; font-size: clamp(1.9rem, 3.2vw, 2.7rem); margin-bottom: 16px; }
 .cta p { color: #cdd9e2; max-width: 650px; margin: 0 auto 28px; }

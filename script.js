@@ -68,10 +68,11 @@
 (function () {
   var box = document.querySelector('[data-gallery]');
   if (!box) return;
+  var scope = box.closest('.container') || box.parentNode;
   var slides = Array.prototype.slice.call(box.querySelectorAll('.car-slide'));
-  var dots = Array.prototype.slice.call(box.querySelectorAll('.car-dot'));
-  var prev = box.querySelector('[data-car-prev]');
-  var next = box.querySelector('[data-car-next]');
+  var dots = Array.prototype.slice.call(scope.querySelectorAll('.car-dot'));
+  var prev = scope.querySelector('[data-car-prev]');
+  var next = scope.querySelector('[data-car-next]');
   var total = slides.length;
   if (total < 2) return;
   var current = 0, timer = null;
@@ -115,11 +116,12 @@
 (function () {
   var box = document.querySelector('[data-reviews]');
   if (!box) return;
+  var scope = box.closest('.container') || box.parentNode;
   var track = box.querySelector('.reviews-track');
   var slides = Array.prototype.slice.call(box.querySelectorAll('.review'));
-  var dots = box.querySelectorAll('.rev-dot');
-  var prev = box.querySelector('[data-rev-prev]');
-  var next = box.querySelector('[data-rev-next]');
+  var dots = scope.querySelectorAll('.rev-dot');
+  var prev = scope.querySelector('[data-rev-prev]');
+  var next = scope.querySelector('[data-rev-next]');
   var total = slides.length;
   if (total < 2) return;
   var current = 0, timer = null;
